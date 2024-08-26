@@ -1,0 +1,20 @@
+server:
+  api-url: https://localhost:8081/server
+  servlet:
+    context-path: /api
+  port: 8080
+  ssl:
+    enables: true
+    key-store: classpath:cert/server.p12
+    key-store-password: sgsxcelore
+    key-store-type: PKCS12
+    client-auth: NEED
+    trust-store: classpath:cert/truststore.p12
+    trust-store-password: sgsxcelore
+    trust-store-type: PKCS12
+client:
+  ssl:
+    key-store: classpath:cert/client.p12
+    key-store-password: sgsxcelore
+    trust-store: classpath:cert/truststore.p12
+    trust-store-password: sgsxcelore

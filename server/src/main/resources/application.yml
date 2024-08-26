@@ -1,0 +1,14 @@
+server:
+  servlet:
+    context-path: /server
+  port: 8081
+  ssl:
+    enables: true
+    key-store: classpath:cert/server.p12
+    key-store-password: sgsxcelore
+    key-store-type: PKCS12
+    client-auth: NEED
+    trust-store: classpath:cert/truststore.p12
+    trust-store-password: sgsxcelore
+    trust-store-type: PKCS12
+
